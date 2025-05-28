@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Zámecká Kavárna</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-amber-800">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <!-- Placeholder for Site Title/Logo if added later -->
+            <div class="text-white text-xl font-bold">Zámecká Kavárna</div>
+
+            <!-- Hamburger Button -->
+            <div class="md:hidden">
+                <button id="hamburger-button" class="text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Navigation Links -->
+            <div id="nav-links" class="hidden md:flex md:flex-grow md:justify-center">
+                <ul class="flex flex-col md:flex-row md:space-x-4">
+                    <li><a href="index.html" class="text-white block py-2 px-4 md:py-4 md:px-6 hover:text-amber-200">Home</a></li>
+                    <li><a href="menu.html" class="text-white block py-2 px-4 md:py-4 md:px-6 hover:text-amber-200">Menu</a></li>
+                    <li><a href="gallery.html" class="text-white block py-2 px-4 md:py-4 md:px-6 hover:text-amber-200">Gallery</a></li>
+                    <li><a href="contact.html" class="text-white block py-2 px-4 md:py-4 md:px-6 hover:text-amber-200">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="p-8">
+        <h1 class="text-4xl font-bold text-amber-900 mb-8 text-center">Naše Nabídka</h1>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-semibold text-amber-800 mb-6">Káva</h2>
+            <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="border-b pb-2"><h3 class="text-xl font-medium text-gray-800">Espresso</h3><p class="text-gray-600">55 Kč</p></div>
+                <div class="border-b pb-2"><h3 class="text-xl font-medium text-gray-800">Cappuccino</h3><p class="text-gray-600">65 Kč</p></div>
+                <div class="border-b pb-2"><h3 class="text-xl font-medium text-gray-800">Latte</h3><p class="text-gray-600">70 Kč</p></div>
+                <div class="border-b pb-2"><h3 class="text-xl font-medium text-gray-800">Americano</h3><p class="text-gray-600">60 Kč</p></div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-semibold text-amber-800 mb-6">Domácí Limonády</h2>
+            <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="border-b pb-2"><h3 class="text-xl font-medium text-gray-800">Malinová</h3><p class="text-gray-600">75 Kč</p></div>
+                <div class="border-b pb-2"><h3 class="text-xl font-medium text-gray-800">Bezinková</h3><p class="text-gray-600">75 Kč</p></div>
+                <div class="border-b pb-2"><h3 class="text-xl font-medium text-gray-800">Citronová</h3><p class="text-gray-600">75 Kč</p></div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-semibold text-amber-800 mb-6">Dezerty</h2>
+            <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="border-b pb-2"><h3 class="text-xl font-medium text-gray-800">Čokoládový dort</h3><p class="text-gray-600">85 Kč</p></div>
+                <div class="border-b pb-2"><h3 class="text-xl font-medium text-gray-800">Jablečný štrůdl</h3><p class="text-gray-600">75 Kč</p></div>
+                <div class="border-b pb-2"><h3 class="text-xl font-medium text-gray-800">Cheesecake</h3><p class="text-gray-600">90 Kč</p></div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-semibold text-amber-800 mb-6">Snídaně / Lehké Občerstvení</h2>
+            <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="border-b pb-2"><h3 class="text-xl font-medium text-gray-800">Croissant s marmeládou</h3><p class="text-gray-600">60 Kč</p></div>
+                <div class="border-b pb-2"><h3 class="text-xl font-medium text-gray-800">Obložený chlebíček</h3><p class="text-gray-600">70 Kč</p></div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white py-6 text-center">
+        <p>© 2023 Zámecká Kavárna</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>

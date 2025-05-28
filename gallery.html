@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Zámecká Kavárna</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-amber-800">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <!-- Placeholder for Site Title/Logo if added later -->
+            <div class="text-white text-xl font-bold">Zámecká Kavárna</div>
+
+            <!-- Hamburger Button -->
+            <div class="md:hidden">
+                <button id="hamburger-button" class="text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Navigation Links -->
+            <div id="nav-links" class="hidden md:flex md:flex-grow md:justify-center">
+                <ul class="flex flex-col md:flex-row md:space-x-4">
+                    <li><a href="index.html" class="text-white block py-2 px-4 md:py-4 md:px-6 hover:text-amber-200">Home</a></li>
+                    <li><a href="menu.html" class="text-white block py-2 px-4 md:py-4 md:px-6 hover:text-amber-200">Menu</a></li>
+                    <li><a href="gallery.html" class="text-white block py-2 px-4 md:py-4 md:px-6 hover:text-amber-200">Gallery</a></li>
+                    <li><a href="contact.html" class="text-white block py-2 px-4 md:py-4 md:px-6 hover:text-amber-200">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="p-8">
+        <h1 class="text-4xl font-bold text-amber-900 mb-8 text-center">Galerie</h1>
+        <p class="text-lg text-gray-600 mb-8 text-center">Prohlédněte si krásu naší kavárny a lahodné produkty. Již brzy zde naleznete více fotografií.</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gray-200 aspect-square flex items-center justify-center"><img src="https://placekitten.com/400/300" alt="Placeholder image 1" class="max-h-full max-w-full"></div>
+            <div class="bg-gray-200 aspect-square flex items-center justify-center"><img src="https://placekitten.com/401/300" alt="Placeholder image 2" class="max-h-full max-w-full"></div>
+            <div class="bg-gray-200 aspect-square flex items-center justify-center"><img src="https://placekitten.com/400/301" alt="Placeholder image 3" class="max-h-full max-w-full"></div>
+        </div>
+    </main>
+    <footer class="bg-gray-800 text-white py-6 text-center">
+        <p>© 2023 Zámecká Kavárna</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
